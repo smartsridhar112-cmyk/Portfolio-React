@@ -1,9 +1,12 @@
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+
+  // GitHub Pages repository path
+  base: '/Portfolio-React/',
 
   server: {
     port: 3000,
@@ -11,4 +14,3 @@ export default defineConfig({
     host: true
   }
 });
-
